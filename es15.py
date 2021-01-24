@@ -7,6 +7,10 @@ fornito da tastiera il none, segnalando con un messaggio di
 errore il caso in cui la nazione richiesta non sia compresa
 nell'elenco.
 '''
+
+print("ESERCIZIO 15")
+print("PROGRAMMA TROVA LA CAPITALE")
+
 nazione = ["Italia", "Inghilterra", "Cina", "Russia", "Stati Uniti", "Australia", "Danimarca", "Germania", "Francia"]
 capitale = ["Roma", "Londra", "Pechino", "Mosca", "Washington", "Canberra", "Copenaghen", "Berlino", "Parigi"]
 

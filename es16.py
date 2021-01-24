@@ -4,26 +4,23 @@ un dizionario con la nazione come chiave e la capitale come
 valore. Successivamente interroga il dizionario per 
 visuallizare la capitale di una nazione.
 '''
-stati = {
-    "Italia" : "Roma",
-    "Inghilterra" : "Londra",
-    "Cina" : "Pechino",
-    "Russia" : "Mosca",
-    "Stati Uniti" : "Washington",
-    "Australia" : "Canberra",
-    "Danimarca" : "Copenaghen",
-    "Germania" : "Berlino",
-    "Francia" : "Parigi"
-}
+
+print("ESERCIZIO 15")
+print("PROGRAMMA TROVA LA CAPITALE")
+
+nazioni = ["Italia", "Inghilterra", "Cina", "Russia", "Stati Uniti", "Australia", "Danimarca", "Germania", "Francia"]
+capitali = ["Roma", "Londra", "Pechino", "Mosca", "Washington", "Canberra", "Copenaghen", "Berlino", "Parigi"]
+
+stati = {nazioni[a] : capitali[a] for a in range(len(nazioni))}
 
 print("Queste sono le nazioni: ")
-for nazione in stati:
-    print(nazione)
+for e in stati:
+    print(e)
 
-nazione = input("Di quale nazione vuoi sapere la capitale: ")
+paese = input("Di quale nazione vuoi sapere la capitale: ")
 
-if nazione in stati:
-    print(nazione, " ha come capitale: ", stati[nazione])
+if paese in stati:
+    print(paese, " ha come capitale: ", stati[paese])
 
 else:
-    print("Errore: ", nazione, "non è presente")
+    print("Errore: ", paese, "non è presente")
